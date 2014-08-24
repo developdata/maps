@@ -1,0 +1,36 @@
+html, body{
+	font-family: Arial, Helvetica, sans-serif;
+	background: #F5F5F5;
+}
+
+.wrapper{
+	margin: 0 auto;
+	width:960px;
+	height: 1000px;
+	background: #FFFFFF;
+}
+
+/*svg{
+	background: #F3F0D4;
+}*/
+
+.country{
+	fill: #C39A74;
+	stroke: white;
+	stroke-width: 0.2px;
+}
+
+#box{
+	border-style:solid;
+    border-width:1px;	
+    border-color: #C39A74;
+}
+
+#box p{
+	padding: 6px;
+}
+
+#map {
+  height:40%; 
+  width:60%; 
+}
