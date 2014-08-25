@@ -1,0 +1,7 @@
+Starting a Python server
+
+python 2.x
+python -m SimpleHTTPServer
+
+python 3.x
+python -m http.server

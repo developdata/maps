@@ -5,7 +5,7 @@ The project contains the files needed for the workshop on visualising data on ma
 
 It contains the relevant javascript libraries as well as the earthquake data from USGS.
 
-It can be cloned to an online editor such as Cloud9 if you do not want to host it on your machine.
+It can be cloned to an online editor such as [Cloud9](https://c9.io/) if you do not want to host it on your machine.
 
 Reference Sites
 -------------
