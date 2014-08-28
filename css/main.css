@@ -30,7 +30,8 @@ html, body{
 	padding: 6px;
 }
 
-#map {
-  height:40%; 
-  width:60%; 
+
+#map{
+	width: 460px;
+	height: 300px;
 }

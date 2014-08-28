@@ -37,8 +37,6 @@
        			.attr("fill", function(d) { return "#657536"; })
        			.attr("stroke", "black")
        			.attr("opacity", "0.5");
-
-
 	});
 
 	queue()
