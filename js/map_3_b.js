@@ -52,7 +52,7 @@
    			}); 
 
    			$(text_box).css({
-   				"width": "60%",
+   				"width": "460px",
    				"height": "auto"
    			})
 
