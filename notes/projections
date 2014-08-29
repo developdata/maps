@@ -47,3 +47,17 @@ The default scale factor is 150.
 
 .clipAngle(angle)
 sets the projection’s clipping circle radius to the specified angle
+
+Some Projections
+
+Mercator projections
+
+Used by tiled mapping libraries such as Leaflet.  It does produce area distortion at the poles and so is not used for choropleth maps.
+
+azimuthal equal-area projection
+
+Maps from a Sphere to a disk and accurately represent the area in all regions of the sphere.  Works well with choropleth maps.
+
+Conic Equal Area projection
+
+This is an Albers projection.  The Albers projection is a conic  equal area projection. scale and shape are not preserved, distortion is minimal between the standard parallels and it shows areas accurately but distorts shapes.  It is a good projection for choropleth maps.  There are versions of the Albers projection in D3.js for specific areas such as albersUSA()

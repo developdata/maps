@@ -1,6 +1,6 @@
 (function(window, document, undefined){
 		//create a Leaflet map and attach to div element
-		var map = L.map('map').setView([32.546813 , -1.054688], 1);
+		var map = L.map('map_leaflet').setView([32.546813 , -1.054688], 1);
 		
         var mapLink = 
             '<a href="http://openstreetmap.org">OpenStreetMap</a>';

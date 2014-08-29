@@ -10,9 +10,9 @@ html, body{
 	background: #FFFFFF;
 }
 
-/*svg{
+#map svg{
 	background: #F3F0D4;
-}*/
+}
 
 .country{
 	fill: #C39A74;
@@ -31,7 +31,11 @@ html, body{
 }
 
 
-#map{
+#map, #map_leaflet{
 	width: 460px;
 	height: 300px;
+}
+
+.earthquake_circle{
+	cursor: pointer;
 }

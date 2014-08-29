@@ -6,5 +6,18 @@ python -m SimpleHTTPServer
 python 3.x
 python -m http.server
 
+
+Projections
+https://github.com/mbostock/d3/wiki/Geo-Projections
+
 USGS Earthquake JSON data
 http://earthquake.usgs.gov/earthquakes/feed/v1.0/geojson.php
+
+Pan and Zoom
+https://github.com/mbostock/d3/wiki/Zoom-Behavior
+
+Mike Bostock - Lets Make a Map
+http://bost.ocks.org/mike/map/
+
+Leaflet Reference
+http://leafletjs.com/reference.html#tilelayer
