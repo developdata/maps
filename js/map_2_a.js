@@ -2,6 +2,8 @@
 
 	var make_map = (function(error, data, data_quake){
 
+		console.log(data_quake);
+
 	  	var width = 460,
 	      	height = 300;
 
@@ -33,15 +35,15 @@
 
        circles.attr("cx", function (d) { return projection(d.geometry.coordinates)[0]; })
        			.attr("cy", function (d) {  return projection(d.geometry.coordinates)[1]; })
-       			.attr("r", function (d) { return d.properties.mag * Math.exp(0.5); })
-       			.attr("fill", function(d) { return "#657536"; })
+       			.attr("r", function (d) { return d.properties.mag * 2; })
+       			.attr("fill",  "#657536")
        			.attr("stroke", "black")
        			.attr("opacity", "0.5");
 	});
 
 	queue()
 		.defer(d3.json, "data_map/world.json")
-		.defer(d3.json, "data_quake/earthquake2.json")
+		.defer(d3.json, "data_quake/earthquake.json")
 		.await(make_map);
 
 })(this, document);

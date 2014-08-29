@@ -32,7 +32,8 @@
 
     //add styles with d3
     // svg.attr('fill', '#C39A74')
-    //     .attr('stroke', 'white')
+    //     .attr('stroke', 'blue')
     //     .attr('stroke-width', '0.3');
+
   });
 })(this, document);

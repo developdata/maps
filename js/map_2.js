@@ -1,6 +1,6 @@
 (function(window, document, undefined){
 
-	var make_map = (function(error, data, data_quake){
+	var make_map = (function(error, data){
 
 	  	var width = 460,
 	      	height = 300;

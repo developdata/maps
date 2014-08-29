@@ -28,3 +28,22 @@
 	    .parallels([50, 60])
 	    .scale(6000)
 	    .translate([width / 2, height / 2]);
+
+
+
+Some basic configurations:
+
+.rotate([rotation])
+The rotation is in degrees with the default of [0,0,0] which represents [ longitude, latitude, roll ] in degrees, if there are only two values given for the projection the roll is 0 degrees.
+
+.center([location])
+the centre is given in degrees and is [0,0] by default. It sets the projections centre.
+
+.translate([point])
+sets the projection translation to an [ x, y ].  The default translation offset places [ 0 , 0 ] at the centre of a 960 x 500 area.
+
+.scale([scale])
+The default scale factor is 150.
+
+.clipAngle(angle)
+sets the projection’s clipping circle radius to the specified angle

@@ -1,11 +1,10 @@
 (function(window, document, undefined){
 
 	var make_map = (function(data){
-
+		//scales for use with D3 for the radius and color
 		var radius_scale = function(data){
 			return d3.scale.linear().domain([0, d3.max(data, function(d){return d.properties.mag;})]).range([1, 10]);
 		}
-
 		var color_scale = function(data){
 			return d3.scale.linear().domain([0, d3.max(data, function(d){return d.properties.mag;})]).range(['yellow', 'red']);
 		}
@@ -23,17 +22,19 @@
         // Initialize the SVG layer
 		map._initPathRoot() 
 
-		 // We pick up the SVG from the map object
+		// get the SVG from the map object
 		var svg = d3.select("#map").select("svg"),
 		g = svg.append("g");	
 
+		//create LatLng object from the imported data
 		data.forEach(function(entry) {
 		   entry.LatLng = new L.LatLng(entry.geometry.coordinates[1],
 		      entry.geometry.coordinates[0])
 		  })	
 
-		var radius = radius_scale(data);
-		var color = color_scale(data);
+		
+		var radius = radius_scale(data),
+		color = color_scale(data);
 		  
 		var feature = g.selectAll("circle")
 		   .data(data)
