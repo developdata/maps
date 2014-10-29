@@ -23,6 +23,7 @@
     //have a look at the data in the console
     console.log(data)
 
+    ////UNCOMMENT CODE
     // svg.selectAll("path")
     //   .data(topojson.feature(data, data.objects.countries).features)
     // .enter()
@@ -30,7 +31,7 @@
     //   .attr("d", path)
     //   .attr("class", "country");
 
-    //add styles with d3
+    ////add styles with d3
     // svg.attr('fill', '#C39A74')
     //     .attr('stroke', 'blue')
     //     .attr('stroke-width', '0.3');
